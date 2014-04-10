@@ -2,10 +2,28 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Client Template
+    title Simple Calc
     link(rel='stylesheet', href='/css/app.css')
   body
-    h1 Client Template
+    h1 Simple Calc
+
+    div
+      input#num1(type='text')
+      button#add +
+      button#sub -
+      button#mul ×
+      button#div ÷
+      button#exp xⁿ
+      input#num2(type='text')
+      span =
+      span#answer1
+
+    div
+      input#num3(type='text')
+      button#root √
+      button#fact !
+      span =
+      span#answer2
 
     script(src='/js/vendor/jquery-2.1.0.js')
     script(src='/js/source/main.js')
